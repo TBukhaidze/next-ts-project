@@ -1,3 +1,4 @@
+import ProjectSlider from "@/components/ProjectSlider";
 import React from "react";
 
 const Page = () => {
@@ -12,6 +13,7 @@ const Page = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </div>
+      <ProjectSlider />
     </div>
   );
 };
