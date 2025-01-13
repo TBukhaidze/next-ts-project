@@ -1,12 +1,8 @@
-import Particle from "@/components/Particle";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex items-center h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
-      <div className="absolute right-0 top-0 h-full w-[100%] z-[2]">
-        <Particle />
-      </div>
       <div className="absolute right-10 md:right-40 bottom-0 z-[10]">
         <Image
           src="/assets/MoustacheMan.png"
