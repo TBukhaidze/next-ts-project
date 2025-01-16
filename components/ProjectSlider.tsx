@@ -30,7 +30,7 @@ const ProjectSlider = () => {
           <div className="grid grid-cols-2 gap-4 md:px-16">
             {ProImages.map((image) => (
               <div
-                className="relative group w-[150px] h-[150px]  md:w-[230px] md:h-[230px]"
+                className="relative group w-full h-32 sm:w-[150px] sm:h-[150px] md:w-[230px] md:h-[230px]"
                 key={image.src}
               >
                 <Image
@@ -38,11 +38,11 @@ const ProjectSlider = () => {
                   alt="project image"
                   width={280}
                   height={280}
-                  className="rounded-md h-full w-full object-cover"
+                  className="rounded-md w-full h-full object-cover"
                 />
 
                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200" />
-                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white md:text-lg">
+                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white text-sm md:text-lg">
                   View Project
                   <Image
                     src="/assets/icons/arrow-right.svg"
@@ -60,7 +60,7 @@ const ProjectSlider = () => {
           <div className="grid grid-cols-2 gap-4 md:px-16">
             {ProImages2.map((image) => (
               <div
-                className="relative group w-[150px] h-[150px]  md:w-[230px] md:h-[230px]"
+                className="relative group w-full h-32 sm:w-[150px] sm:h-[150px] md:w-[230px] md:h-[230px]"
                 key={image.src}
               >
                 <Image
@@ -72,7 +72,7 @@ const ProjectSlider = () => {
                 />
 
                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200" />
-                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200 text-white md:text-lg">
+                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white text-sm md:text-lg">
                   View Project
                   <Image
                     src="/assets/icons/arrow-right.svg"

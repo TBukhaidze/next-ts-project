@@ -4,7 +4,7 @@ import React from "react";
 const Page = () => {
   return (
     <div className="flex items-center justify-center gap-5 flex-col md:flex-row h-screen bg-[#0C011A]">
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 m-10">
         <h1 className="text-[50px] text-white font-semibold">
           My Work<span className="text-red-500">.</span>
         </h1>
