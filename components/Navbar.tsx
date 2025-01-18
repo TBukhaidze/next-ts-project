@@ -12,7 +12,7 @@ const Navbar = () => {
       </h1>
       <div className="flex flex-row items-center justify-center gap-5">
         {Socials.map((social) => (
-          <Link href={social.link} target="blank">
+          <Link href={social.link} target="blank" key={social.name}>
             <Image
               key={social.name}
               src={social.src}
