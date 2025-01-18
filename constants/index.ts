@@ -12,16 +12,19 @@ import {
 
 export const Socials = [
   {
-    name: "Discord",
-    src: "/assets/discord.svg",
+    name: "GitHub",
+    src: "/assets/gitHub.svg",
+    link: "https://github.com/TBukhaidze",
   },
   {
     name: "Facebook",
     src: "/assets/facebook.svg",
+    link: "https://www.facebook.com/buxa.buxa.7/",
   },
   {
-    name: "Instagram",
-    src: "/assets/instagram.svg",
+    name: "LinkedIn",
+    src: "/assets/linkedIn.svg",
+    link: "https://www.linkedin.com/in/temuri-bukhaidze-83728633a/",
   },
 ];
 
