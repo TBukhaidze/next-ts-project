@@ -8,11 +8,10 @@ import Link from "next/link";
 import Transition from "./Transition";
 
 const Sidebar = () => {
-  const [isRouting, setIsRouting] = useState(false);
-  const [isActive, setIsActive] = useState("Home");
-  const [prevPath, setPrevPath] = useState("/");
-
   const path = usePathname();
+  const [isRouting, setIsRouting] = useState(false);
+  const [isActive, setIsActive] = useState(path);
+  const [prevPath, setPrevPath] = useState("/");
 
   useEffect(() => {
     if (prevPath !== path) {
@@ -31,6 +30,10 @@ const Sidebar = () => {
     }
   }, [isRouting, path]);
 
+  useEffect(() => {
+    setIsActive(path);
+  }, [path]);
+
   return (
     <div className="fixed right-8 top-[40%] z-[20] h-[200px] w-[48px] rounded-full bg-gray-500 bg-opacity-50">
       <AnimatePresence mode="wait">
@@ -40,11 +43,11 @@ const Sidebar = () => {
             <Link
               key={link.name}
               href={link.link}
-              onClick={() => setIsActive(link.name)}
+              onClick={() => setIsActive(link.link)}
             >
               <link.icon
                 className={`w-[28px] h-[28px] ${
-                  isActive === link.name ? "text-orange-500" : "text-white"
+                  isActive === link.link ? "text-orange-500" : "text-white"
                 }`}
               />
             </Link>
